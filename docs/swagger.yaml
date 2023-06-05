@@ -1,0 +1,1029 @@
+definitions:
+  baptis.CreateRequest:
+    properties:
+      jenis_kelamin:
+        type: string
+      nama_ayah:
+        type: string
+      nama_ibu:
+        type: string
+      nama_lengkap:
+        type: string
+      tanggal_baptis:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  baptis.CreateResponse:
+    type: object
+  baptis.CreateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/baptis.CreateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  baptis.DeleteResponse:
+    properties:
+      id:
+        type: string
+    type: object
+  baptis.DeleteResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/baptis.DeleteResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  baptis.GetAllResponse:
+    properties:
+      datas:
+        items:
+          $ref: '#/definitions/entities.BaptisEntityModel'
+        type: array
+    type: object
+  baptis.GetAllResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/baptis.GetAllResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  baptis.GetByIDResponse:
+    properties:
+      datas:
+        $ref: '#/definitions/entities.BaptisEntityModel'
+    type: object
+  baptis.GetByIDResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/baptis.GetByIDResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  baptis.UpdateRequest:
+    properties:
+      created_at:
+        type: string
+      created_by:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_ayah:
+        type: string
+      nama_ibu:
+        type: string
+      nama_lengkap:
+        type: string
+      tanggal_baptis:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    required:
+    - id
+    type: object
+  baptis.UpdateResponse:
+    type: object
+  baptis.UpdateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/baptis.UpdateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  entities.BaptisEntityModel:
+    properties:
+      created_at:
+        type: string
+      created_by:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_ayah:
+        type: string
+      nama_ibu:
+        type: string
+      nama_lengkap:
+        type: string
+      tanggal_baptis:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  entities.PemberkatanEntityModel:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  entities.PindahEntityModel:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pemberkatan.CreateRequest:
+    properties:
+      alamat:
+        type: string
+      golongan_darah:
+        type: string
+      jenis_kelamin:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pemberkatan.CreateResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pemberkatan.CreateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pemberkatan.CreateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pemberkatan.DeleteResponse:
+    properties:
+      id:
+        type: string
+    type: object
+  pemberkatan.DeleteResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pemberkatan.DeleteResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pemberkatan.GetAllResponse:
+    properties:
+      datas:
+        items:
+          $ref: '#/definitions/entities.PemberkatanEntityModel'
+        type: array
+    type: object
+  pemberkatan.GetAllResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pemberkatan.GetAllResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pemberkatan.GetByIDResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pemberkatan.GetByIDResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pemberkatan.GetByIDResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pemberkatan.UpdateRequest:
+    properties:
+      id:
+        type: string
+    required:
+    - id
+    type: object
+  pemberkatan.UpdateResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pemberkatan.UpdateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pemberkatan.UpdateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pindah.CreateRequest:
+    properties:
+      alamat:
+        type: string
+      gereja:
+        type: string
+      golongan_darah:
+        type: string
+      jenis_kelamin:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pindah.CreateResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pindah.CreateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pindah.CreateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pindah.DeleteResponse:
+    properties:
+      id:
+        type: string
+    type: object
+  pindah.DeleteResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pindah.DeleteResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pindah.GetAllResponse:
+    properties:
+      datas:
+        items:
+          $ref: '#/definitions/entities.PindahEntityModel'
+        type: array
+    type: object
+  pindah.GetAllResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pindah.GetAllResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pindah.GetByIDResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pindah.GetByIDResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pindah.GetByIDResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  pindah.UpdateRequest:
+    properties:
+      id:
+        type: string
+    required:
+    - id
+    type: object
+  pindah.UpdateResponse:
+    properties:
+      alamat:
+        type: string
+      created_at:
+        type: string
+      created_by:
+        type: string
+      golongan_darah:
+        type: string
+      id:
+        type: string
+      jenis_kelamin:
+        type: string
+      modified_at:
+        type: string
+      modified_by:
+        type: string
+      nama_jemaat:
+        type: string
+      nomor_hp:
+        type: string
+      tanggal_lahir:
+        type: string
+      tempat_lahir:
+        type: string
+    type: object
+  pindah.UpdateResponseDoc:
+    properties:
+      body:
+        properties:
+          data:
+            $ref: '#/definitions/pindah.UpdateResponse'
+          meta:
+            $ref: '#/definitions/response.Meta'
+        type: object
+    type: object
+  response.Meta:
+    properties:
+      message:
+        default: "true"
+        type: string
+      success:
+        default: true
+        type: boolean
+    type: object
+  response.errorResponse:
+    properties:
+      error:
+        type: string
+      meta:
+        $ref: '#/definitions/response.Meta'
+    type: object
+info:
+  contact: {}
+paths:
+  /baptis:
+    get:
+      consumes:
+      - application/json
+      description: Get ALl Baptis
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/baptis.GetAllResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get All Baptis
+      tags:
+      - Baptis
+    patch:
+      consumes:
+      - application/json
+      description: Update Baptis
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/baptis.UpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/baptis.UpdateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Update Baptis
+      tags:
+      - Baptis
+    post:
+      consumes:
+      - application/json
+      description: Create Baptis
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/baptis.CreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/baptis.CreateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Create Baptis
+      tags:
+      - Baptis
+  /baptis/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete Baptis
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/baptis.DeleteResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Delete Baptis
+      tags:
+      - Baptis
+    get:
+      consumes:
+      - application/json
+      description: Get Baptis By ID
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/baptis.GetByIDResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get Baptis By ID
+      tags:
+      - Baptis
+  /pemberkatan:
+    get:
+      consumes:
+      - application/json
+      description: Get ALl Pemberkatan
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pemberkatan.GetAllResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get All Pemberkatan
+      tags:
+      - Pemberkatan
+    patch:
+      consumes:
+      - application/json
+      description: Update Pemberkatan
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/pemberkatan.UpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pemberkatan.UpdateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Update Pemberkatan
+      tags:
+      - Pemberkatan
+    post:
+      consumes:
+      - application/json
+      description: Create Pemberkatan
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/pemberkatan.CreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pemberkatan.CreateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Create Pemberkatan
+      tags:
+      - Pemberkatan
+  /pemberkatan/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete Pemberkatan
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pemberkatan.DeleteResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Delete Pemberkatan
+      tags:
+      - Pemberkatan
+    get:
+      consumes:
+      - application/json
+      description: Get Pemberkatan By ID
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pemberkatan.GetByIDResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get Pemberkatan By ID
+      tags:
+      - Pemberkatan
+  /pindah:
+    get:
+      consumes:
+      - application/json
+      description: Get ALl Pindah
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pindah.GetAllResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get All Pindah
+      tags:
+      - Pindah
+    patch:
+      consumes:
+      - application/json
+      description: Update Pindah
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/pindah.UpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pindah.UpdateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Update Pindah
+      tags:
+      - Pindah
+    post:
+      consumes:
+      - application/json
+      description: Create Pindah
+      parameters:
+      - description: request body
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/pindah.CreateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pindah.CreateResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Create Pindah
+      tags:
+      - Pindah
+  /pindah/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Delete Pindah
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pindah.DeleteResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Delete Pindah
+      tags:
+      - Pindah
+    get:
+      consumes:
+      - application/json
+      description: Get Pindah By ID
+      parameters:
+      - description: id path
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/pindah.GetByIDResponseDoc'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/response.errorResponse'
+      summary: Get Pindah By ID
+      tags:
+      - Pindah
+swagger: "2.0"
